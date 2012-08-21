@@ -46,30 +46,14 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-p {
-  margin-bottom: 1em;
-}
 
 a {
   color: $link-color;
-}
-
-a.btn {
-  color: #fff;
-  font-size: 1em;
-  font-weight: bold;
   text-decoration: none;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.35);
-  display: inline-block;
-  padding: 13px 28px;
-  @include background-image(linear-gradient(#DF701F, #E68022 13%, #D14D1A));
-  @include border-radius(6px);
-  border: 1px solid #D14D1A;
-  margin-top: 15px;
 
-  &:hover, &:focus {
-    @include box-shadow(0 0 2px #D14D1A);
+  &:hover,
+  &:focus {
+    border-bottom: 1px dashed $link-color;
   }
 }
 
@@ -93,4 +77,28 @@ a.btn {
     @include zen-grid-item(6,1);
     @include zen-clear();
   }
+
+  p {
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    @include zen-grid-item(4, 2);
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+    display: block;
+    padding: 13px 28px;
+    @include background-image(linear-gradient(#DF701F, #E68022 13%, #D14D1A));
+    @include border-radius(6px);
+    border: 1px solid #D14D1A;
+    margin-top: 25px;
+
+    &:hover, &:focus {
+      @include box-shadow(0 0 2px #D14D1A);
+    }
+}
 }
