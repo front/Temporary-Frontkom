@@ -4,3 +4,93 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+@import "zen";
+
+$zen-column-count: 3;
+$zen-gutter-width: 20px;
+
+$link-color: #D94013;
+
+#page {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  @include zen-grid-container;
+}
+
+.logo {
+  @include zen-grid-item(1, 1);
+}
+
+.section {
+  @include zen-grid-item(2, 1, right)
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Muli', 'Helvetica', Arial, sans-serif;
+  line-height: 1.35em;
+  margin-top: 8%;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  line-height: 0.9em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: $link-color;
+}
+
+a.btn {
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+  display: inline-block;
+  padding: 13px 28px;
+  @include background-image(linear-gradient(#DF701F, #E68022 13%, #D14D1A));
+  @include border-radius(6px);
+  border: 1px solid #D14D1A;
+  margin-top: 15px;
+
+  &:hover, &:focus {
+    @include box-shadow(0 0 2px #D14D1A);
+  }
+}
+
+@media all and (max-width: 600px) {
+  $zen-column-count: 6;
+
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .logo {
+    @include zen-grid-item(4,2);
+    margin-bottom: 35px;
+  }
+
+  .section {
+    @include zen-grid-item(6,1);
+    @include zen-clear();
+  }
+}

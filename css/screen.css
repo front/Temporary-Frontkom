@@ -66,3 +66,170 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 15, ../sass/screen.scss */
+#page {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  *position: relative;
+  *zoom: 1;
+}
+/* line 52, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+#page:before, #page:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+#page:after {
+  clear: both;
+}
+
+/* line 23, ../sass/screen.scss */
+.logo {
+  float: left;
+  width: 33.333%;
+  margin-left: 0%;
+  margin-right: -33.333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 27, ../sass/screen.scss */
+.section {
+  float: right;
+  width: 66.667%;
+  margin-right: 0%;
+  margin-left: -66.667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 31, ../sass/screen.scss */
+img {
+  width: 100%;
+}
+
+/* line 35, ../sass/screen.scss */
+body {
+  font-family: 'Muli', 'Helvetica', Arial, sans-serif;
+  line-height: 1.35em;
+  margin-top: 8%;
+}
+
+/* line 41, ../sass/screen.scss */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  line-height: 0.9em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 49, ../sass/screen.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 53, ../sass/screen.scss */
+a {
+  color: #d94013;
+}
+
+/* line 57, ../sass/screen.scss */
+a.btn {
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  padding: 13px 28px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #df701f), color-stop(13%, #e68022), color-stop(100%, #d14d1a));
+  background-image: -webkit-linear-gradient(#df701f, #e68022 13%, #d14d1a);
+  background-image: -moz-linear-gradient(#df701f, #e68022 13%, #d14d1a);
+  background-image: -o-linear-gradient(#df701f, #e68022 13%, #d14d1a);
+  background-image: -ms-linear-gradient(#df701f, #e68022 13%, #d14d1a);
+  background-image: linear-gradient(#df701f, #e68022 13%, #d14d1a);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #D14D1A;
+  margin-top: 15px;
+}
+/* line 71, ../sass/screen.scss */
+a.btn:hover, a.btn:focus {
+  -webkit-box-shadow: 0 0 2px #d14d1a;
+  -moz-box-shadow: 0 0 2px #d14d1a;
+  box-shadow: 0 0 2px #d14d1a;
+}
+
+@media all and (max-width: 600px) {
+  /* line 79, ../sass/screen.scss */
+  body {
+    text-align: center;
+  }
+
+  /* line 83, ../sass/screen.scss */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* line 87, ../sass/screen.scss */
+  .logo {
+    float: left;
+    width: 66.667%;
+    margin-left: 16.667%;
+    margin-right: -83.333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    margin-bottom: 35px;
+  }
+
+  /* line 92, ../sass/screen.scss */
+  .section {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: left;
+  }
+}
