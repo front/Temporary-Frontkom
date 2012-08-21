@@ -1,4 +1,5 @@
 .sass-cache/
+.htaccess
 
 # osx gitignore files
 .DS_Store
